@@ -70,7 +70,7 @@ define_arg() {
     if [[ "$arg_value" == "$_NULL_VALUE_" ]]; then
         arg_value=""
     fi
-    export "$arg_name"="$arg_value"
+    printf -v "$arg_name" '%s' "$arg_value"
 }
 
 # Function to parse command-line arguments
@@ -92,12 +92,12 @@ parse_args() {
                         echo "Missing value for argument --$key"
                         exit 1
                     else
-                        export "$key"="$2"
+                        printf -v "$key" '%s' "$2"
                         shift 2
                     fi
                 ;;
                 'bool')
-                    export "$key"='true'
+                    printf -v "$key" '%s' 'true'
                     shift
                 ;;
                 *)

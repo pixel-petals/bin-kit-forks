@@ -59,11 +59,11 @@ parse_args() {
 
         if [[ -n "${ARG_PROPERTIES[$key,help]}" ]]; then
             if [[ "${ARG_PROPERTIES[$key,type]}" == "bool" ]]; then
-                export "$key"="true"
+                declare -g "$key"="true"
                 shift # past the flag argument
             else
                 [[ -z "$2" || "$2" == --* ]] && display_error "Missing value for argument --$key"
-                export "$key"="$2"
+                declare -g "$key"="$2"
                 shift # past argument
                 shift # past value
             fi
@@ -81,7 +81,7 @@ parse_args() {
     # Set defaults for any unset arguments
     for arg in "${!ARG_PROPERTIES[@]}"; do
         arg_name="${arg%%,*}" # Extract argument name
-        [[ -z "${!arg_name}" ]] && export "$arg_name"="${ARG_PROPERTIES[$arg_name,default]}"
+        [[ -z "${!arg_name}" ]] && declare -g "$arg_name"="${ARG_PROPERTIES[$arg_name,default]}"
     done
 }
 
