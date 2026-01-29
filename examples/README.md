@@ -12,3 +12,16 @@ SysVinit service management files, compatible with bash 3 and 4
 
 Example of background jobs handling, compatible with bash 4, but should support bash 3 too when constructor updated
 
+## tui
+
+TUI components library written with bash and terminal sequences. No ncurses. Potentially compatible with most terminals
+
+## minesweeper
+
+Simple minesweeper game writen with TUI library
+
+## nano
+
+Nano-like text editor written in bash using TUI library
+
+
