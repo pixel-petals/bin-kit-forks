@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 function git.branch.fromRemote () {
+
 	local origin
 	local repo
-	local branch=
+	local branch
 
 	origin="$1"
 	branch="${2:-HEAD}"
@@ -15,5 +16,6 @@ function git.branch.fromRemote () {
 	git rm -rf .
 	git commit --allow-empty -m "init"
 	git pull "$origin" "$branch"
+	git push -u origin
 
 }
