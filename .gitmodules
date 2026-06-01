@@ -1,44 +1,44 @@
-[submodule "remote/dotfiles"]
-	path = remote/dotfiles
+[submodule "dotfiles"]
+	path = dotfiles
 	url = git@github.com:pixel-petals/bin-kit-forks.git
 	branch = remote/dotfiles
 
-[submodule "remote/bash-cheat-sheet"]
-	path = remote/bash-cheat-sheet
+[submodule "bash-cheat-sheet"]
+	path = bash-cheat-sheet
 	url = git@github.com:pixel-petals/bin-kit-forks.git
 	branch = remote/bash-cheat-sheet
 
-[submodule "remote/ba.sh"]
-	path = remote/ba.sh
+[submodule "ba.sh"]
+	path = ba.sh
 	url = git@github.com:pixel-petals/bin-kit-forks.git
 	branch = remote/ba.sh
 
-[submodule "remote/sshuttle"]
-	path = remote/sshuttle
+[submodule "sshuttle"]
+	path = sshuttle
 	url = git@github.com:pixel-petals/bin-kit-forks.git
 	branch = remote/sshuttle
 
-[submodule "remote/bash-testing-in-bash"]
-	path = remote/bash-testing-in-bash
+[submodule "testing-in-bash"]
+	path = testing-in-bash
 	url = git@github.com:pixel-petals/bin-kit-forks.git
-	branch = remote/bash-testing-in-bash
+	branch = remote/testing-in-bash
 
-[submodule "remote/bashunit"]
-	path = remote/bashunit
+[submodule "bashunit"]
+	path = bashunit
 	url = git@github.com:pixel-petals/bin-kit-forks.git
 	branch = remote/bashunit
 
-[submodule "remote/modernish"]
-	path = remote/modernish
+[submodule "modernish"]
+	path = modernish
 	url = git@github.com:pixel-petals/bin-kit-forks.git
 	branch = remote/modernish
 
-[submodule "remote/bash-infinity"]
-	path = remote/bash-infinity
+[submodule "bash-infinity"]
+	path = bash-infinity
 	url = git@github.com:pixel-petals/bin-kit-forks.git
 	branch = remote/bash-infinity
 
-[submodule "remote/bashmatic"]
-	path = remote/bashmatic
+[submodule "bashmatic"]
+	path = bashmatic
 	url = git@github.com:pixel-petals/bin-kit-forks.git
 	branch = remote/bashmatic
