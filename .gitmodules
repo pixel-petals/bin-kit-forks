@@ -42,3 +42,7 @@
 	path = bashmatic
 	url = git@github.com:pixel-petals/bin-kit-forks.git
 	branch = remote/bashmatic
+[submodule "argparse-sh"]
+	path = argparse-sh
+	url = git@github.com:pixel-petals/bin-kit-forks.git
+	branch = remote/argparse-sh
