@@ -46,3 +46,7 @@
 	path = argparse-sh
 	url = git@github.com:pixel-petals/bin-kit-forks.git
 	branch = remote/argparse-sh
+[submodule "l-lib"]
+	path = l-lib
+	url = git@github.com:pixel-petals/bin-kit-forks.git
+	branch = remote/l-lib
